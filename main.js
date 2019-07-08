@@ -15,7 +15,9 @@ function createWindow () {
     //maxHeight: 665,
     minWidth: 746,
     minHeight: 665,
-    icon: path.join(__dirname + 'src/assets/calendar.ico'),
+    icon: path.join(__dirname + '/src/calendar.png'),
+    frame: false,
+    transparent: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }

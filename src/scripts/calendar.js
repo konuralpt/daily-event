@@ -1,124 +1,52 @@
-$(document).ready(function() {
-	var date = new Date();
-	var d = date.getDate();
-	var m = date.getMonth();
-	var y = date.getFullYear();
-	
-	
-	/* initialize the external events
-	-----------------------------------------------------------------*/
-	
-	$('#external-events div.external-event').each(function() {
-	
-		// create an Event Object (https://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
-		// it doesn't need to have a start or end
-		var eventObject = {
-			title: $.trim($(this).text()) // use the element's text as the event title
-		};
-	
-		// store the Event Object in the DOM element so we can get to it later
-		$(this).data('eventObject', eventObject);
-	
-		// make the event draggable using jQuery UI
-		$(this).draggable({
-			zIndex: 999,
-			revert: true,      // will cause the event to go back to its
-			revertDuration: 0  //  original position after the drag
-		});
-	
-	});
-	
-	
-	/* initialize the calendar
-	-----------------------------------------------------------------*/
-	
-	var calendar =  $('#calendar').fullCalendar({
-		header: {
-			left: 'title',
-			center: 'agendaDay,agendaWeek,month',
-			right: 'prev,next today'
-		},
-		editable: true,
-		firstDay: 1, //  1(Monday) this can be changed to 0(Sunday) for the USA system
-		selectable: true,
-		defaultView: 'month',
-	
-		axisFormat: 'h:mm',
-		columnFormat: {
-			month: 'ddd',    // Mon
-			week: 'ddd d', // Mon 7
-			day: 'dddd M/d',  // Monday 9/7
-			agendaDay: 'dddd d'
-		},
-		titleFormat: {
-			month: 'MMMM yyyy', // September 2009
-			week: "MMMM yyyy", // September 2009
-			day: 'MMMM yyyy'                  // Tuesday, Sep 8, 2009
-		},
-		allDaySlot: false,
-		selectHelper: true,
-		select: function(start, end, allDay) {
-			$('#myModal').modal('show');
-			var title = "09:30 ";
-			// console.log(start,end);
-			if (title) {
-				calendar.fullCalendar('renderEvent',
-					{
-						title: title,
-						start: start,
-						end: end,
-						className: 'info'
-					},
-					true // make the event "stick"
-				);
-			}
-			calendar.fullCalendar('unselect');
-		},
-		events: [
-			{
-				title: 'All Day Event',
-				start: new Date(y, m, 1)
-			},
-			{
-				id: 999,
-				title: 'Repeating Event',
-				start: new Date(y, m, d-3, 16, 0),
-				allDay: false,
-				className: 'info'
-			},
-			{
-				id: 999,
-				title: 'Repeating Event',
-				start: new Date(y, m, d+4, 16, 0),
-				allDay: false,
-				className: 'info'
-			},
-			{
-				title: 'Meeting',
-				start: new Date(y, m, d, 10, 30),
-				allDay: false,
-				className: 'important'
-			},
-			{
-				title: 'Lunch',
-				start: new Date(y, m, d, 12, 0),
-				end: new Date(y, m, d, 14, 0),
-				allDay: false,
-				className: 'important'
-			},
-			{
-				title: 'Birthday Party',
-				start: new Date(y, m, d+1, 19, 0),
-				end: new Date(y, m, d+1, 22, 30),
-				allDay: false,
-			},
-			{
-				title: 'Click for Google',
-				start: new Date(y, m, 28),
-				end: new Date(y, m, 29),
-				url: 'https://google.com/',
-				className: 'success'
-			}
-		],
-	});
+var eventss = [];
+
+document.addEventListener('DOMContentLoaded', function() {
+    readTextFile("scripts/events.json", function(text){
+	  var data = JSON.parse(text);
+	  Object.keys(data).forEach(function(item){
+		  eventss.push(data[item]);
+	  });
+	  renderCalendar();
+  });
+
+
 });
+
+function readTextFile(file, callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+            callback(rawFile.responseText);
+        }
+    }
+    rawFile.send(null);
+};
+
+function renderCalendar(){
+	var calendarEl = document.getElementById('calendar');
+
+	var calendar = new FullCalendar.Calendar(calendarEl, {
+		plugins: [ 'dayGrid','interaction','bootstrap' ],
+		themeSystem: 'bootstrap',
+		header: {
+			left:   'title',
+			center: '',
+			right:  'today prev,next'
+		},
+		displayEventEnd: true,
+		events: eventss,
+		eventTimeFormat: {
+			hour: '2-digit',
+			minute: '2-digit',
+			hour12: false,
+		},
+		dateClick: function(info) {
+			$('#myModal').modal('show');
+		  }
+	  });
+	
+	  calendar.render();
+
+}
