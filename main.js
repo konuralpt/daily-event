@@ -15,13 +15,14 @@ function createWindow () {
     //maxHeight: 665,
     minWidth: 746,
     minHeight: 665,
+    icon: path.join(__dirname + 'src/assets/calendar.ico'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('index.html')
+  mainWindow.loadFile('src/index.html')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
