@@ -1,0 +1,18 @@
+{
+  "name": "daily-event",
+  "version": "1.0.0",
+  "description": "ElectronJS Daily Event Application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/konuralpt/daily-event",
+  "keywords": [
+    "Electron",
+  ],
+  "author": "Konuralp Toksoy",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^5.0.6"
+  }
+}
