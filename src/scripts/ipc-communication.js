@@ -18,6 +18,7 @@ save_button.addEventListener('click', function(){
 	ipc.send('save_event',obj)
 })
 
-ipc.on('asynReply', (event, args) => {
- replyDiv.innerHTML = args;
+ipc.on('saved_event', (event, args) => {
+	console.log('saved');
+ location.reload();
 });
