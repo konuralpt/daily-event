@@ -65,6 +65,6 @@ const ipc = require('electron').ipcMain;
 ipc.on('save_event', (event, args) => {
   var test = require('./src/scripts/events.json');
   test.push(args);
-  fs.writeFileSync('./src/scripts/events.json', JSON.stringify(test));
-  event.sender.send('saved_event',null);
+  //fs.writeFileSync('./src/scripts/events.json', JSON.stringify(test));
+  //event.sender.send('saved_event',null);
 });

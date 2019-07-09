@@ -9,7 +9,11 @@
     <link href='./assets/fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
     <link href='./assets/fullcalendar/packages/bootstrap/main.css' rel='stylesheet' />
     <link href='./assets/fullcalendar/packages/Sketchy/bootstrap.min.css' rel='stylesheet' />
-
+    <style>
+      .fc-event{
+        cursor: pointer;
+      }
+    </style>
     <script>window.$ = window.jQuery = require('./assets/jquery/jquery-3.4.1.min.js');</script>
     <script src="./assets/popper/popper.min.js"></script>
     <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
@@ -35,7 +39,14 @@
       </div>
       <div class="modal-body">
         <form>
-
+            <div class="form-group row" hidden>
+                <label for="staticEmail" class="col-sm-3 col-form-label">ID</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control input-small" placeholder="id" id="id" hidden>
+                  <input type="text" class="form-control input-small" placeholder="backgroundColor" id="backgroundColor" hidden>
+                </div>
+            </div>
+              
           <div class="form-group row">
             <label for="staticEmail" class="col-sm-3 col-form-label">Title</label>
             <div class="col-sm-9">
@@ -71,6 +82,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal" id="save_event">Save</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" id="update_event">Update</button>
       </div>
     </div>
   </div>
