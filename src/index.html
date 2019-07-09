@@ -10,8 +10,7 @@
     <link href='./assets/fullcalendar/packages/bootstrap/main.css' rel='stylesheet' />
     <link href='./assets/fullcalendar/packages/Sketchy/bootstrap.min.css' rel='stylesheet' />
 
-
-    <script type="text/javascript" src="./assets/jquery/jquery-3.4.1.min.js"></script>
+    <script>window.$ = window.jQuery = require('./assets/jquery/jquery-3.4.1.min.js');</script>
     <script src="./assets/popper/popper.min.js"></script>
     <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
     <script src='./assets/bootstrap-timepicker/js/bootstrap-timepicker.min.js'></script>
@@ -61,10 +60,9 @@
           </div>
 
           <div class="form-group row">
-            <label for="end_time" class="col-sm-3 col-form-label">All Day</label>
-            <div class="input-group bootstrap-timepicker timepicker col-sm-9">
-              <input id="end_time" type="text" class="form-control input-small col-sm-10">
-              <span class="input-group-addon col-sm-2"><i class="far fa-clock fa-2x"></i></span>
+            <label for="all_day" class="col-sm-4 col-form-label">All Day</label>
+            <div class="col-sm-5">
+              <input type="checkbox" class="form-check-input" id="all_day">
             </div>
           </div>                    
 
@@ -80,9 +78,12 @@
 
     <div id="calendar"></div>
 
-
     <!-- You can also require other files to run in this process -->
-    <script src="./main.js"></script>
-
+    <script>
+        require('./main.js');
+        require('./scripts/ipc-communication.js');
+    </script>
   </body>
+
+
 </html>

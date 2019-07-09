@@ -1,7 +1,7 @@
 // Modules to control application life and create native browser window
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow } = require('electron')
 const path = require('path')
-
+const fs = require('fs')
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
@@ -16,10 +16,11 @@ function createWindow () {
     minWidth: 746,
     minHeight: 665,
     icon: path.join(__dirname + '/src/calendar.png'),
-    frame: false,
-    transparent: true,
+    //frame: false,
+    //transparent: true,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js')
+      preload: path.join(__dirname, 'preload.js'),
+      nodeIntegration: true
     }
   })
 
@@ -36,7 +37,9 @@ function createWindow () {
     // when you should delete the corresponding element.
     mainWindow = null
   })
+
 }
+
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
@@ -58,3 +61,9 @@ app.on('activate', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+const ipc = require('electron').ipcMain;
+ipc.on('save_event', (event, args) => {
+  var test = require('./src/scripts/events.json');
+  test.push(args);
+  fs.writeFileSync('./src/scripts/events.json', JSON.stringify(test));  
+});

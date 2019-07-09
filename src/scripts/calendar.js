@@ -44,6 +44,7 @@ function renderCalendar(){
 		},
 		dateClick: function(info) {
 			$('#myModal').modal('show');
+			$('.modal-title').html(info.dateStr);
 		  }
 	  });
 	
