@@ -1,5 +1,5 @@
 // Modules to control application life and create native browser window
-const {app, BrowserWindow } = require('electron')
+const {app, BrowserWindow, shell } = require('electron')
 const path = require('path')
 const fs = require('fs')
 // Keep a global reference of the window object, if you don't, the window will
@@ -16,8 +16,8 @@ function createWindow () {
     minWidth: 746,
     minHeight: 665,
     icon: path.join(__dirname + '/src/calendar.png'),
-    //frame: false,
-    //transparent: true,
+    frame: false,
+    transparent: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: true
@@ -62,9 +62,39 @@ app.on('activate', function () {
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
 const ipc = require('electron').ipcMain;
+
 ipc.on('save_event', (event, args) => {
-  var test = require('./src/scripts/events.json');
-  test.push(args);
-  //fs.writeFileSync('./src/scripts/events.json', JSON.stringify(test));
-  //event.sender.send('saved_event',null);
+
+  var events = require('./src/scripts/events.json');
+  events.push(args);
+  fs.writeFileSync('./src/scripts/events.json', JSON.stringify(events, null, "\t"));
+  event.sender.send('saved_event',null);
+
+});
+
+ipc.on('update_event', (event, args) => {
+  var events = require('./src/scripts/events.json');
+
+  if(events.find(x => x.id === args.id)){
+    const index = events.findIndex(x => x.id === args.id);
+    events.splice(index, 1);
+    events.push(args);
+    fs.writeFileSync('./src/scripts/events.json', JSON.stringify(events,null,"\t"));
+    event.sender.send('updated_event',null);
+  }else{
+
+  }
+
+});
+
+ipc.on('close_app', (event, args) => {
+  app.quit();
+});
+
+ipc.on('minimize_app', (event, args) => {
+  mainWindow.minimize();
+});
+
+ipc.on('goto_github', (event, args) => {
+  shell.openExternal('https://github.com/konuralpt/daily-event');
 });

@@ -9,11 +9,8 @@
     <link href='./assets/fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
     <link href='./assets/fullcalendar/packages/bootstrap/main.css' rel='stylesheet' />
     <link href='./assets/fullcalendar/packages/Sketchy/bootstrap.min.css' rel='stylesheet' />
-    <style>
-      .fc-event{
-        cursor: pointer;
-      }
-    </style>
+    <link href='./assets/styles.css' rel='stylesheet' />
+
     <script>window.$ = window.jQuery = require('./assets/jquery/jquery-3.4.1.min.js');</script>
     <script src="./assets/popper/popper.min.js"></script>
     <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
@@ -26,67 +23,88 @@
     <script src="./scripts/calendar.js"></script>
 
   </head>
-  <body>
+  <body style="margin-top:40px">
 
-<div class="modal" tabindex="-1" role="dialog" id="myModal">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-            <div class="form-group row" hidden>
-                <label for="staticEmail" class="col-sm-3 col-form-label">ID</label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control input-small" placeholder="id" id="id" hidden>
-                  <input type="text" class="form-control input-small" placeholder="backgroundColor" id="backgroundColor" hidden>
-                </div>
-            </div>
-              
-          <div class="form-group row">
-            <label for="staticEmail" class="col-sm-3 col-form-label">Title</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control input-small" placeholder="Project developement" id="title">
-            </div>
-          </div>
-
-          <div class="form-group row">
-            <label for="start_time" class="col-sm-3 col-form-label">Time Range</label>
-            <div class="input-group bootstrap-timepicker timepicker col-sm-9">
-              <input id="start_time" type="text" class="form-control input-small col-sm-10">
-              <span class="input-group-addon col-sm-2"><i class="far fa-clock fa-2x"></i></span>
-            </div>
-          </div>
-
-          <div class="form-group row">
-            <label for="end_time" class="col-sm-3 col-form-label">Time Range</label>
-            <div class="input-group bootstrap-timepicker timepicker col-sm-9">
-              <input id="end_time" type="text" class="form-control input-small col-sm-10">
-              <span class="input-group-addon col-sm-2"><i class="far fa-clock fa-2x"></i></span>
-            </div>
-          </div>
-
-          <div class="form-group row">
-            <label for="all_day" class="col-sm-4 col-form-label">All Day</label>
-            <div class="col-sm-5">
-              <input type="checkbox" class="form-check-input" id="all_day">
-            </div>
-          </div>                    
-
-        </form>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal" id="save_event">Save</button>
-        <button type="button" class="btn btn-primary" data-dismiss="modal" id="update_event">Update</button>
+    <div id="topBar">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="calendar.png" alt="Smiley face" height="30" width="30">
+          <span id="topBar_title">Daily Event</span>
+        </div>
+        <div class="col-sm-4">
+          <img src="github.png" alt="Smiley face" height="25" width="25" id="github_icon">
+        </div>
+        <div class="col-sm-2">
+          <button type="button" id="close_app_button" class="float-right">
+            <span aria-hidden="true" class="close_app">&times;</span>
+          </button>
+          <button type="button" id="minimize_app_button" class="float-right">
+            <span aria-hidden="true" class="close_app">-</span>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="form-group row" hidden>
+                    <label for="staticEmail" class="col-sm-3 col-form-label">ID</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control input-small" placeholder="id" id="id" hidden>
+                      <input type="text" class="form-control input-small" placeholder="backgroundColor" id="backgroundColor" hidden>
+                      <input type="text" class="form-control input-small" placeholder="borderColor" id="borderColor" hidden>
+                    </div>
+                </div>
+                  
+              <div class="form-group row">
+                <label for="staticEmail" class="col-sm-3 col-form-label">Title</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control input-small" placeholder="Project developement" id="title">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="start_time" class="col-sm-3 col-form-label">Start Time</label>
+                <div class="input-group bootstrap-timepicker timepicker col-sm-9">
+                  <input id="start_time" type="text" class="form-control input-small col-sm-10">
+                  <span class="input-group-addon col-sm-2"><i class="far fa-clock fa-2x"></i></span>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="end_time" class="col-sm-3 col-form-label">End Time</label>
+                <div class="input-group bootstrap-timepicker timepicker col-sm-9">
+                  <input id="end_time" type="text" class="form-control input-small col-sm-10">
+                  <span class="input-group-addon col-sm-2"><i class="far fa-clock fa-2x"></i></span>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="all_day" class="col-sm-4 col-form-label">All Day</label>
+                <div class="col-sm-5">
+                  <input type="checkbox" class="form-check-input" id="all_day">
+                </div>
+              </div>                    
+
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal" id="save_event">Save</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" id="update_event">Update</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div id="calendar"></div>
 

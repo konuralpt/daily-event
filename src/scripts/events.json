@@ -1,1 +1,101 @@
-[{"title":"event1","start":"2019-07-08"},{"title":"event2","start":"2019-07-08","end":"2019-07-08","backgroundColor":"#1C213F","borderColor":"white"},{"title":"event3","start":"2019-07-20T12:30:00","end":"2019-07-20T17:30:00","allDay":false},{"all_day":false,"backgroundColor":"#F5534F","borderColor":"white","end":"2019-07-18T15:33","start":"2019-07-18T15:23","title":"hello"},{"all_day":false,"backgroundColor":"#1C213F","borderColor":"white","end":"2019-07-24T17:14","start":"2019-07-24T17:14","title":"sadasd"},{"id":"2423","allDay":false,"backgroundColor":"#F3B900","borderColor":"white","end":"2019-07-24T17:15","start":"2019-07-24T17:15","title":"SFDF"}]
+[
+	{
+		"allDay": false,
+		"backgroundColor": "#313A87",
+		"borderColor": "white",
+		"end": "2019-07-02T18:00",
+		"id": "1562748342933",
+		"start": "2019-07-02T13:00",
+		"title": "PMI Calendar Panel Excel Export"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#1C213F",
+		"borderColor": "white",
+		"end": "2019-07-03T11:00",
+		"id": "1562748366125",
+		"start": "2019-07-03T09:11",
+		"title": "PMI Calendar Panel UI Düzenlemeleri"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#F3B900",
+		"borderColor": "white",
+		"end": "2019-07-03T14:20",
+		"id": "1562748411545",
+		"start": "2019-07-03T11:00",
+		"title": "Craash Web Panel"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#F5534F",
+		"borderColor": "white",
+		"end": "2019-07-03T15:27",
+		"id": "1562748507902",
+		"start": "2019-07-03T14:20",
+		"title": "MyStafTuborg Android"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#1C213F",
+		"borderColor": "white",
+		"end": "2019-07-04T12:30",
+		"id": "1562748589490",
+		"start": "2019-07-04T09:00",
+		"title": "ChatBot anlasilmayan konusmalar Kaydedilmiyor. Kaydedilmesi"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#F2C9E0",
+		"borderColor": "white",
+		"end": "2019-07-04T18:00",
+		"id": "1562748605404",
+		"start": "2019-07-04T13:30",
+		"title": "Craash Web Panel (Api ile Panelin birlestirilmesi)"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#731F6D",
+		"borderColor": "white",
+		"end": "2019-07-05T11:30",
+		"id": "1562749768491",
+		"start": "2019-07-05T09:00",
+		"title": "Craash Web Panel"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#300A40",
+		"borderColor": "white",
+		"end": "2019-07-05T12:30",
+		"id": "1562749787049",
+		"start": "2019-07-05T11:30",
+		"title": "ChatBot MVC Download File"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#2FBDBD",
+		"borderColor": "white",
+		"end": "2019-07-05T18:00",
+		"id": "1562749809560",
+		"start": "2019-07-05T13:30",
+		"title": "Craash Web Panel"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#90DCD0",
+		"borderColor": "white",
+		"end": null,
+		"id": "1562749873370",
+		"start": "2019-07-08T09:00",
+		"title": "Craash Web Panel"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#FF5500",
+		"borderColor": "white",
+		"end": "2019-07-03T18:00",
+		"id": "1562748545420",
+		"start": "2019-07-03T15:30",
+		"title": "Craash Web Panel"
+	}
+]

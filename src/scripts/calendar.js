@@ -61,10 +61,11 @@ function renderCalendar(){
 				borderColor: info.event.borderColor,
 				allDay: info.event.allDay,
 			}
+			$('.modal-title').html(obj.start.getFullYear() + "-" + ("0"+(obj.start.getMonth() + 1)).slice(-2) + "-" + ("0"+obj.start.getDate()).slice(-2));
 			$('#id').val(obj.id);
 			$('#title').val(obj.title);
 			$('#start_time').val((obj.start) ? obj.start.getHours()+':'+obj.start.getMinutes() : null);
-			$('#end_time').val((obj.end) ? obj.end.getHours()+':'+obj.end.getMinutes() : null);
+			$('#end_time').val((obj.end) ? obj.end.getHours()+':'+ obj.end.getMinutes() : null);
 			$('#backgroundColor').val(obj.backgroundColor);
 			$('#borderColor').val(obj.borderColor);
 			$('#all_day').prop('checked',obj.allDay);
