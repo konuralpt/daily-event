@@ -97,5 +97,410 @@
 		"id": "1562748545420",
 		"start": "2019-07-03T15:30",
 		"title": "Craash Web Panel"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#F3B900",
+		"borderColor": "white",
+		"end": "2019-07-09T11:16",
+		"id": "1562832986439",
+		"start": "2019-07-09T11:16",
+		"title": "Nothing"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#F5534F",
+		"borderColor": "white",
+		"end": "2019-07-10T11:16",
+		"id": "1562832995496",
+		"start": "2019-07-10T11:16",
+		"title": "Nothing"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#F5534F",
+		"borderColor": "white",
+		"end": "2019-07-11T10:06",
+		"id": "1563433591737",
+		"start": "2019-07-11T10:06",
+		"title": "Nothing"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#2FBDBD",
+		"borderColor": "white",
+		"end": "2019-07-12T10:06",
+		"id": "1563433596287",
+		"start": "2019-07-12T10:06",
+		"title": "Nothing"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#1C213F",
+		"borderColor": "white",
+		"end": "2019-07-15T10:06",
+		"id": "1563433600610",
+		"start": "2019-07-15T10:06",
+		"title": "Nothing"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": ",#F2C9E0",
+		"borderColor": "white",
+		"end": "2019-07-16T10:06",
+		"id": "1563433604437",
+		"start": "2019-07-16T10:06",
+		"title": "Nothing"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": ",#F2C9E0",
+		"borderColor": "white",
+		"end": "2019-07-17T10:06",
+		"id": "1563433608246",
+		"start": "2019-07-17T10:06",
+		"title": "Nothing"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#313A87",
+		"borderColor": "white",
+		"end": null,
+		"id": "1563433653736",
+		"start": "2019-07-18T09:00",
+		"title": "MyStaff Tuborg Sol Debug (outOfMemory)"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#300A40",
+		"borderColor": "white",
+		"end": null,
+		"id": "1563790528550",
+		"start": "2019-07-19T10:00",
+		"title": "MyStaff Checkin React Native iOS"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#731F6D",
+		"borderColor": "white",
+		"end": "2019-07-22T18:00",
+		"id": "1563790558411",
+		"start": "2019-07-22T10:00",
+		"title": "MyStaff Checkin React Native iOS"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#300A40",
+		"borderColor": "white",
+		"end": "2019-07-24T18:00",
+		"id": "1563968409835",
+		"start": "2019-07-24T09:00",
+		"title": "Craash Web Panel (Posts Page)"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#1C213F",
+		"borderColor": "white",
+		"end": "2019-07-22T10:00",
+		"id": "1563968442324",
+		"start": "2019-07-22T09:00",
+		"title": "Nothing"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#313A87",
+		"borderColor": "white",
+		"end": "2019-07-23T12:30",
+		"id": "1563968464702",
+		"start": "2019-07-23T09:00",
+		"title": "Toplanti"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#F3B900",
+		"borderColor": "white",
+		"end": "2019-07-23T18:00",
+		"id": "1563968392351",
+		"start": "2019-07-23T13:30",
+		"title": "Craash Web Panel (Posts Page)"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#313A87",
+		"borderColor": "white",
+		"end": "2019-07-25T18:00",
+		"id": "1564389211095",
+		"start": "2019-07-25T09:00",
+		"title": "Craash Web Panel (Posts Page)"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#FF5500",
+		"borderColor": "white",
+		"end": "2019-07-26T18:00",
+		"id": "1564389222441",
+		"start": "2019-07-26T09:00",
+		"title": "Craash Web Panel (Posts Page)"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#2FBDBD",
+		"borderColor": "white",
+		"end": "2019-07-29T16:00",
+		"id": "1564483561729",
+		"start": "2019-07-29T09:00",
+		"title": "Craash Web Panel (Users)"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#F3B900",
+		"borderColor": "white",
+		"end": "2019-07-29T18:00",
+		"id": "1564483671920",
+		"start": "2019-07-29T16:00",
+		"title": "Transporting ChatBot Server"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#FF5500",
+		"borderColor": "white",
+		"end": "2019-07-30T18:00",
+		"id": "1564483696304",
+		"start": "2019-07-30T09:00",
+		"title": "Transporting ChatBot Server"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#1C213F",
+		"borderColor": "white",
+		"end": "2019-08-01T18:00",
+		"id": "1564659098626",
+		"start": "2019-08-01T09:00",
+		"title": "Craash WebSocket"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#90DCD0",
+		"borderColor": "white",
+		"end": "2019-08-06T13:44",
+		"id": "1565261061080",
+		"start": "2019-08-06T13:44",
+		"title": "HTTPS Connection ChatBot Server"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#FF5500",
+		"borderColor": "white",
+		"end": "2019-08-05T13:44",
+		"id": "1565261069759",
+		"start": "2019-08-05T13:44",
+		"title": "HTTPS Connection ChatBot Server"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#300A40",
+		"borderColor": "white",
+		"end": "2019-08-08T12:00",
+		"id": "1565261106914",
+		"start": "2019-08-08T09:00",
+		"title": "ChatBot Isvec Hazirligi"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#300A40",
+		"borderColor": "white",
+		"end": "2019-08-08T18:00",
+		"id": "1565261129606",
+		"start": "2019-08-08T13:00",
+		"title": "Nothing"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#F5534F",
+		"borderColor": "white",
+		"end": "2019-08-07T14:00",
+		"id": "1565261055688",
+		"start": "2019-08-07T09:00",
+		"title": "HTTPS Connection ChatBot Server"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#731F6D",
+		"borderColor": "white",
+		"end": "2019-08-07T18:00",
+		"id": "1565261165137",
+		"start": "2019-08-07T14:00",
+		"title": "ChatBot Translation API"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#F3B900",
+		"borderColor": "white",
+		"end": "2019-08-12T11:14",
+		"id": "1566202466384",
+		"start": "2019-08-12T11:14",
+		"title": "Off"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#313A87",
+		"borderColor": "white",
+		"end": "2019-08-13T11:14",
+		"id": "1566202469774",
+		"start": "2019-08-13T11:14",
+		"title": "Off"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#FF5500",
+		"borderColor": "white",
+		"end": "2019-08-14T11:14",
+		"id": "1566202473025",
+		"start": "2019-08-14T11:14",
+		"title": "Off"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#731F6D",
+		"borderColor": "white",
+		"end": "2019-08-15T11:14",
+		"id": "1566202477101",
+		"start": "2019-08-15T11:14",
+		"title": "Off"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#313A87",
+		"borderColor": "white",
+		"end": "2019-08-16T11:14",
+		"id": "1566202480402",
+		"start": "2019-08-16T11:14",
+		"title": "Off"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#1C213F",
+		"borderColor": "white",
+		"end": "2019-08-30T11:15",
+		"id": "1566202530469",
+		"start": "2019-08-30T11:15",
+		"title": "Off"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#1C213F",
+		"borderColor": "white",
+		"end": "2019-08-09T11:15",
+		"id": "1566202540386",
+		"start": "2019-08-09T11:15",
+		"title": "Nothing"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#2FBDBD",
+		"borderColor": "white",
+		"end": "2019-08-19T12:00",
+		"id": "1566202607953",
+		"start": "2019-08-19T09:00",
+		"title": "Nothing"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#300A40",
+		"borderColor": "white",
+		"end": "2019-08-21T11:58",
+		"id": "1566464328395",
+		"start": "2019-08-21T11:58",
+		"title": "Big Blue Button SSL"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#FF5500",
+		"borderColor": "white",
+		"end": "2019-08-22T11:58",
+		"id": "1566464344585",
+		"start": "2019-08-22T11:58",
+		"title": "Big Blue Button WebRTC"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#F5534F",
+		"borderColor": "white",
+		"end": "2019-08-23T09:47",
+		"id": "1566542891241",
+		"start": "2019-08-23T09:47",
+		"title": "BigBlueButton Redis"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#F3B900",
+		"borderColor": "white",
+		"end": "2019-08-26T15:26",
+		"id": "1566908889768",
+		"start": "2019-08-26T15:26",
+		"title": "BigBlueButton Client Configuration"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#1C213F",
+		"borderColor": "white",
+		"end": "2019-08-27T15:28",
+		"id": "1566908897401",
+		"start": "2019-08-27T15:28",
+		"title": "BigBlueButton Client Configuration"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#90DCD0",
+		"borderColor": "white",
+		"end": "2019-08-28T11:27",
+		"id": "1567412882429",
+		"start": "2019-08-28T11:27",
+		"title": "TopTalent JobList Page"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#300A40",
+		"borderColor": "white",
+		"end": "2019-08-29T11:28",
+		"id": "1567412892103",
+		"start": "2019-08-29T11:28",
+		"title": "TopTalent JobList Page"
+	},
+	{
+		"allDay": false,
+		"backgroundColor": "#731F6D",
+		"borderColor": "white",
+		"end": "2019-08-30T18:00",
+		"id": "1567412907375",
+		"start": "2019-08-30T10:30",
+		"title": "TopTalent JobList Page"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#1C213F",
+		"borderColor": "white",
+		"end": "2019-09-09T12:00",
+		"id": "1568014894963",
+		"start": "2019-09-09T09:00",
+		"title": "Craash WebAdmin Chat"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#1C213F",
+		"borderColor": "white",
+		"end": "2019-09-10T13:38",
+		"id": "1568198294293",
+		"start": "2019-09-10T13:38",
+		"title": "Craash WebAdmin"
+	},
+	{
+		"allDay": true,
+		"backgroundColor": "#313A87",
+		"borderColor": "white",
+		"end": "2019-09-11T13:38",
+		"id": "1568198301636",
+		"start": "2019-09-11T13:38",
+		"title": "Craash WebAdmin"
 	}
 ]
